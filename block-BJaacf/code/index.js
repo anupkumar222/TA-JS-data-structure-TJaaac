@@ -84,6 +84,9 @@ for(let favNumber of arry) {
     console.log(`divisibilty by 5 number ${favNum}`);
 
 // 9. Log all the element of the array one by one
+for(let num of numbers){
+    console.log(`Elements: ${num}`);
+}
 
 // 10. Find all the number in the array that is divisible by 3
 var tempNum = [];
