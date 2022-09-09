@@ -19,18 +19,18 @@ console.log(collection);
 // 2. Add all the even numbers from both arrays numbers and userIds into a newly created array named `evenCollection`
 let evenCollection = [];
 
-for(let i = 0; i < numbers.length; i++) {
-  if (numbers[i] % 2 === 0) {
-    evenCollection.push(numbers[i]);
+for(let i = 0; i < collection.length; i++) {
+  if (collection[i] % 2 === 0) {
+    evenCollection.push(collection[i]);
   }
 }
 console.log(evenCollection);
 // 3. Add all the odd numbers from both arrays numbers and userIds into a newly created array named `oddCollection`
 let oddCollection = [];
 
-for(let i = 0; i < numbers.length; i++) {
-  if (numbers[i] % 2 !== 0) {
-    oddCollection.push(numbers[i]);
+for(let i = 0; i < collection.length; i++) {
+  if (collection[i] % 2 !== 0) {
+    oddCollection.push(collection[i]);
   }
 }
 console.log(oddCollection);
@@ -51,6 +51,7 @@ console.log(oddCollection);
 */
 
 function times(number, string = 'test') {
+  if(number < 1) return [];
   let arry = [];
    for(i = 1; i <= number; i++) {
     arry.push(string);
@@ -82,7 +83,7 @@ console.log(times(5)); // ['test', 'test', 'test', 'test', 'test']
 function revert(returnValue) {
     let arryReturn = [];
     j = 0;
-     for(i = returnValue.length; i >= 0; i--) {
+     for(i = returnValue.length - 1; i >= 0; i--) {
       arryReturn[j] = returnValue[i];
       j++;
      }
