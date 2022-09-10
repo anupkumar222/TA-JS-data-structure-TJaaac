@@ -66,7 +66,7 @@ const got = {
         {
           name: "Cersei Baratheon",
           description:
-            "Married to King Robert Baratheon - Daughter of Tywin Lannister",
+            "Married to King Robert Baratheon - Daughter of Tywin Lannister", 
         },
       ],
     },
